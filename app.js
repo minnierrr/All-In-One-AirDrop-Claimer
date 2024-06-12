@@ -78,6 +78,31 @@ const claim = async () => {
   "mode": "cors",
   "credentials": "omit"
 });
+const response22 = await fetch("https://api-clicker.pixelverse.xyz/api/mining/claim", {
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "no-cache",
+    "initdata": "query_id=AAHXgpYnAAAAANeClicWWvTO&user=%7B%22id%22%3A664175319%2C%22first_name%22%3A%22Albert%22%2C%22last_name%22%3A%22Dominic%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1718218186&hash=fc3ee86c52ea31407c78e4c042847211d41043957bddae576805aff0bee81781",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "secret": "c86c19c9201947fbe38689d40d35ea4937a94fe6ec7e918ab772694c30559f5f",
+    "tg-id": "664175319",
+    "username": ""
+  },
+  "referrer": "https://sexyzbot.pxlvrs.io/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});
 const datapix = await response2.json();
 console.log(datapix.claimedAmount);
 sendTelegramMessage("Pixel Claimed"+datapix.claimedAmount)
@@ -87,6 +112,27 @@ sendTelegramMessage("Pixel Claimed"+datapix.claimedAmount)
           "accept": "*/*",
           "accept-language": "en-US,en;q=0.9",
           "authorization": "Bearer 1718213753242P0i9sCMHPxOARCW0UB6DxlP7B2SqIFSKOXAfT3EIHZzLcfmFAwBVpxnhBDs3MBVT721265675",
+          "cache-control": "no-cache",
+          "pragma": "no-cache",
+          "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"",
+          "sec-ch-ua-mobile": "?0",
+          "sec-ch-ua-platform": "\"Linux\"",
+          "sec-fetch-dest": "empty",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-site": "same-site"
+        },
+        "referrer": "https://hamsterkombat.io/",
+        "referrerPolicy": "strict-origin-when-cross-origin",
+        "body": null,
+        "method": "POST",
+        "mode": "cors",
+        "credentials": "include"
+      });
+      const response55 = await fetch("https://api.hamsterkombat.io/clicker/sync", {
+        "headers": {
+          "accept": "*/*",
+          "accept-language": "en-US,en;q=0.9",
+          "authorization": "Bearer 1718218017228sdM7plnwU9BISzslylfCiW9EGQIFYp9zDGBfwJE3InuC9Yalo0Zeq1UJf8fS0xC0664175319",
           "cache-control": "no-cache",
           "pragma": "no-cache",
           "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"",
@@ -116,7 +162,7 @@ sendTelegramMessage("Pixel Claimed"+datapix.claimedAmount)
         "sec-fetch-dest": "empty",
         "sec-fetch-mode": "cors",
         "sec-fetch-site": "same-site",
-        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3MjEyNjU2NzUiLCJjaGF0SWQiOiI3MjEyNjU2NzUiLCJpYXQiOjE3MTgyMTQ5NjMsImV4cCI6MTcyMDgwNjk2Mywicm9sZUF1dGhvcml6ZXMiOltdLCJ1c2VySWQiOjE3OTQwNDE0MjE5ODc4MTU0MjR9.oNDggybfsgU54L2jCS8o686POYJxMX0Mo0av-i_Laxz_0uFb3AFIeIQ5EVU-FJPOm52PI7O1Fjal_t8cHMkbQg"
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2NjQxNzUzMTkiLCJjaGF0SWQiOiI2NjQxNzUzMTkiLCJpYXQiOjE3MTgyMTgzMjAsImV4cCI6MTcyMDgxMDMyMCwicm9sZUF1dGhvcml6ZXMiOltdLCJ1c2VySWQiOjE4MDA1NDk3Mjc5NDI1ODYzNjh9.0Xis_72zfRHiZndS0PBHur1P-An0rNBvxyRx3S9Elp9tgsGHf6xNVBgZQwdPPzsVqpYKZHj3F6JwliiK5C9o_g"
       },
       "referrer": "https://www.yescoin.gold/",
       "referrerPolicy": "strict-origin-when-cross-origin",
