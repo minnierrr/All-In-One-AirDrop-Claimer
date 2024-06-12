@@ -51,8 +51,8 @@ const claim = async () => {
     const data = await response.json();
     const data1 = data.clickerUser.balanceCoins;
     
-    const final = "data3.player.full_name" + " " + data1;
-    console.log(final);
+    const final = "Hamster Balance" + " " + data1;
+    //console.log(final);
   const response2 = await fetch("https://api-clicker.pixelverse.xyz/api/mining/claim", {
   "headers": {
     "accept": "application/json, text/plain, */*",
@@ -78,6 +78,9 @@ const claim = async () => {
   "mode": "cors",
   "credentials": "omit"
 });
+const datapix = await response2.json();
+console.log(datapix.claimedAmount);
+sendTelegramMessage("Pixel Claimed"+datapix.claimedAmount)
   
   const response5 = await fetch("https://api.hamsterkombat.io/clicker/sync", {
         "headers": {
