@@ -32,7 +32,7 @@ const claim = async () => {
         "headers": {
           "accept": "application/json",
           "accept-language": "en",
-          "authorization": "Bearer 171800081371952lYshgESdIXktwJ22V81dWc6WcM8M7813xGK7OCBlnkqGNEQX60xWuFhVyXNtiy5717002716",
+          "authorization": "Bearer 1718213753242P0i9sCMHPxOARCW0UB6DxlP7B2SqIFSKOXAfT3EIHZzLcfmFAwBVpxnhBDs3MBVT721265675",
           "content-type": "application/json",
           "sec-ch-ua": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
           "sec-ch-ua-mobile": "?0",
@@ -50,63 +50,33 @@ const claim = async () => {
       });
     const data = await response.json();
     const data1 = data.clickerUser.balanceCoins;
-    // tiestamp like 
-    const timestamp1 = Date.now().toString();
-    const response1 = await fetch("https://api.tapswap.ai/api/player/submit_taps", {
-      "headers": {
-        "accept": "*/*",
-        "accept-language": "en",
-        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjU3MTcwMDI3MTYsImlhdCI6MTcxODAwMjEwMCwiZXhwIjoxNzE4MDA1NzAwfQ.GejP4j6ygbucLTIMg0ipOh3XrYCCVTPIoQrnXkUO7lY",
-        "cache-control": "no-cache",
-        "content-id": "115664",
-        "content-type": "application/json",
-        "pragma": "no-cache",
-        "sec-ch-ua": "\"Not A;Brand\";v=\"99\", \"Chromium\";v=\"123\", \"Google Chrome\";v=\"123\"",
-        "sec-ch-ua-mobile": "?1",
-        "sec-ch-ua-platform": "\"Android\"",
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "cross-site",
-        "x-app": "tapswap_server",
-        "x-bot": "no",
-        "x-cv": "622"
-      },
-      "referrer": "https://app.tapswap.club/",
-      "referrerPolicy": "strict-origin-when-cross-origin",
-      "body": `{"taps":1500,"time":1718002106452}`,
-      "method": "POST",
-      "mode": "cors",
-      "credentials": "include"
-    });
     
-    const data2 = await response1.json();
-    const data3 = data2;
-    console.log(timestamp1)
-    console.log(data3);
     const final = "data3.player.full_name" + " " + data1;
     console.log(final);
-  const response2 = await fetch("https://jjvnmoyncmcewnuykyid.supabase.co/rest/v1/rpc/save_coins", {
+  const response2 = await fetch("https://api-clicker.pixelverse.xyz/api/mining/claim", {
   "headers": {
-    "accept": "*/*",
-    "accept-language": "en",
-    "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impqdm5tb3luY21jZXdudXlreWlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg3MDE5ODIsImV4cCI6MjAyNDI3Nzk4Mn0.oZh_ECA6fA2NlwoUamf1TqF45lrMC0uIdJXvVitDbZ8",
-    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWxlZ3JhbUlkIjo1NzE3MDAyNzE2LCJpYXQiOjE3MTgwMTQ2NjR9.hBa8TQ4j7lkipMvm0Oq2S4_9dtyzp_Sff2Cf0MFmuNc",
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "en-US,en;q=0.9",
     "cache-control": "no-cache",
-    "content-profile": "public",
-    "content-type": "application/json",
+    "initdata": "query_id=AAELpP0qAAAAAAuk_So-JUhp&user=%7B%22id%22%3A721265675%2C%22first_name%22%3A%22HK%22%2C%22last_name%22%3A%22%22%2C%22language_code%22%3A%22en%22%2C%22allows_write_to_pm%22%3Atrue%7D&auth_date=1718213951&hash=ff307ab4dcd2e60e5aa4a15cf49b3e8c384babf8e2e5a5e69958fa264168c832",
     "pragma": "no-cache",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Google Chrome\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "cross-site",
-    "x-client-info": "postgrest-js/1.9.2",
-    "x-telegram-user-id": "5717002716"
+    "secret": "a9a2bb1f441784de183a0fc5e3d8d91f8fb5080736c721c2045664684b15f892",
+    "tg-id": "721265675",
+    "username": ""
   },
-  "referrer": "https://dot.dapplab.xyz/",
+  "referrer": "https://sexyzbot.pxlvrs.io/",
   "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "{\"coins\":20000}",
+  "body": null,
   "method": "POST",
   "mode": "cors",
-  "credentials": "include"
+  "credentials": "omit"
 });
   const restore2 = await fetch("https://jjvnmoyncmcewnuykyid.supabase.co/rest/v1/rpc/restore_attempt", {
   "headers": {
@@ -184,7 +154,7 @@ const claim = async () => {
         "headers": {
           "accept": "*/*",
           "accept-language": "en-US,en;q=0.9",
-          "authorization": "Bearer 1718202088797La6JDkS5kjqkeR2tIrpOIvlpbf8ZF7nbdN7GoYEYOeMsd5fVnxDKRG56DHXE5U6S1196575861",
+          "authorization": "Bearer 1718213753242P0i9sCMHPxOARCW0UB6DxlP7B2SqIFSKOXAfT3EIHZzLcfmFAwBVpxnhBDs3MBVT721265675",
           "cache-control": "no-cache",
           "pragma": "no-cache",
           "sec-ch-ua": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\"",
