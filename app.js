@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const telegramBotToken = "6846260168:AAGuSGtoqRfuYhhtvZ11xoacx2nyKI2ixN0";
-const telegramChatId = "1196575861";
+const telegramBotToken = "7246747691:AAExBoR-vPp-6cVUm_1QFlZdUAVf2eiNpkA";
+const telegramChatId = "721265675";
 async function sendTelegramMessage(message) {
   try {
       const response = await fetch("https://api.telegram.org/bot" + telegramBotToken + "/sendMessage", {
@@ -78,78 +78,7 @@ const claim = async () => {
   "mode": "cors",
   "credentials": "omit"
 });
-  const restore2 = await fetch("https://jjvnmoyncmcewnuykyid.supabase.co/rest/v1/rpc/restore_attempt", {
-  "headers": {
-    "accept": "*/*",
-    "accept-language": "en",
-    "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impqdm5tb3luY21jZXdudXlreWlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg3MDE5ODIsImV4cCI6MjAyNDI3Nzk4Mn0.oZh_ECA6fA2NlwoUamf1TqF45lrMC0uIdJXvVitDbZ8",
-    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZWxlZ3JhbUlkIjo1NzE3MDAyNzE2LCJpYXQiOjE3MTgwODkyMTh9.89a9OA8pDVTOrBraNrapnMqjeQY3C8hPtTw9hnIA2S0",
-    "cache-control": "no-cache",
-    "content-profile": "public",
-    "content-type": "application/json",
-    "pragma": "no-cache",
-    "sec-ch-ua": "\"Not A;Brand\";v=\"99\", \"Chromium\";v=\"123\", \"Google Chrome\";v=\"123\"",
-    "sec-ch-ua-mobile": "?1",
-    "sec-ch-ua-platform": "\"Android\"",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "cross-site",
-    "x-client-info": "postgrest-js/1.9.2",
-    "x-telegram-user-id": "5717002716"
-  },
-  "referrer": "https://dot.dapplab.xyz/",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "{}",
-  "method": "POST",
-  "mode": "cors",
-  "credentials": "include"
-});
-  console.log("restore dot coin");
-  console.log(restore2.json());
-  const res3 = await fetch("https://hexacore-tg-api.onrender.com/api/daily-reward", {
-  "headers": {
-    "accept": "*/*",
-    "accept-language": "en",
-    "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1NzE3MDAyNzE2LCJ1c2VybmFtZSI6ImRpbGVlcDI4NiIsInRpbWVzdGFtcCI6MTcxODA4NzU2Ni45MDk2Mzl9.y7cLitE_H6BVwKJAmp9tWw2GQij-yhDz7YHW8G8C3Lo",
-    "cache-control": "no-cache",
-    "content-type": "application/json",
-    "pragma": "no-cache",
-    "sec-ch-ua": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Linux\"",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "cross-site"
-  },
-  "referrer": "https://ago-wallet.hexacore.io/",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "{\"user_id\":5717002716}",
-  "method": "POST",
-  "mode": "cors",
-  "credentials": "include"
-});
-  const res4 = await fetch("https://hexacore-tg-api.onrender.com/api/mining-complete", {
-  "headers": {
-    "accept": "*/*",
-    "accept-language": "en",
-    "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1NzE3MDAyNzE2LCJ1c2VybmFtZSI6ImRpbGVlcDI4NiIsInRpbWVzdGFtcCI6MTcxODA4NzU2Ni45MDk2Mzl9.y7cLitE_H6BVwKJAmp9tWw2GQij-yhDz7YHW8G8C3Lo",
-    "cache-control": "no-cache",
-    "content-type": "application/json",
-    "pragma": "no-cache",
-    "sec-ch-ua": "\"Google Chrome\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Linux\"",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "cross-site"
-  },
-  "referrer": "https://ago-wallet.hexacore.io/",
-  "referrerPolicy": "strict-origin-when-cross-origin",
-  "body": "{\"taps\":40}",
-  "method": "POST",
-  "mode": "cors",
-  "credentials": "include"
-});
+  
   const response5 = await fetch("https://api.hamsterkombat.io/clicker/sync", {
         "headers": {
           "accept": "*/*",
@@ -173,6 +102,30 @@ const claim = async () => {
       });
     const data5 = await response5.json();
     console.log(data);
+    const respons11 = await fetch("https://api.yescoin.gold/game/claimOfflineYesPacBonus", {
+      "headers": {
+        "accept": "application/json, text/plain, */*",
+        "accept-language": "en-US,en;q=0.9",
+        "cache-control": "no-cache",
+        "content-type": "application/x-www-form-urlencoded",
+        "pragma": "no-cache",
+        "priority": "u=1, i",
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "same-site",
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3MjEyNjU2NzUiLCJjaGF0SWQiOiI3MjEyNjU2NzUiLCJpYXQiOjE3MTgyMTQ5NjMsImV4cCI6MTcyMDgwNjk2Mywicm9sZUF1dGhvcml6ZXMiOltdLCJ1c2VySWQiOjE3OTQwNDE0MjE5ODc4MTU0MjR9.oNDggybfsgU54L2jCS8o686POYJxMX0Mo0av-i_Laxz_0uFb3AFIeIQ5EVU-FJPOm52PI7O1Fjal_t8cHMkbQg"
+      },
+      "referrer": "https://www.yescoin.gold/",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "body": null,
+      "method": "POST",
+      "mode": "cors",
+      "credentials": "omit"
+    });
+    const data11 = await respons11.json();
+    console.log(data11);
+    sendTelegramMessage("Yes Coin Log");
+    sendTelegramMessage(data11);
   
     sendTelegramMessage(final);
     return final
